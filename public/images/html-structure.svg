@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" 
+     width="1050" 
+     height="430" 
+     viewBox="0 0 1050 430">
+    <!-- Background -->
+    
+    
+    <!-- Code Editor Panel -->
+    <g transform="translate(40,40)">
+        <!-- Editor window with better shadow and border -->
+        <rect width="450" height="360" rx="10" fill="#1e1e1e" filter="url(#dropShadow)"/>
+        <rect width="450" height="40" rx="10" fill="#2d2d2d"/>
+        
+        <!-- Title bar with improved styling -->
+        <text x="20" y="25" fill="#fff" font-family="JetBrains Mono, monospace" font-size="14">
+            index<tspan fill="#FF69B4">.html</tspan>
+        </text>
+        <circle cx="420" cy="20" r="7" fill="#ff5f57"/>
+        
+        <!-- Code content with improved font and spacing -->
+        <g transform="translate(4,60)">
+            <!-- Structure indicators -->
+            <g>
+                <!-- HTML Document indicator -->
+                <path d="M35,15 L20,15 M20,15 L20,255 M20,255 L35,255" 
+                      stroke="#4CAF50" stroke-width="1" fill="none"/>
+                <text x="-40" y="152" fill="#4CAF50" font-size="12" 
+                      transform="rotate(-90,-5,135)">HTML Document</text>
+                
+                <!-- Head section indicator -->
+                <path d="M55,45 L45,45 M45,45 L45,105 M45,105 L55,105" 
+                      stroke="#4CAF50" stroke-width="1" fill="none"/>
+                <text x="10" y="105" fill="#4CAF50" font-size="12" 
+                      transform="rotate(-90,15,80)">Head</text>
+                
+                <!-- Body section indicator -->
+                <path d="M55,135 L45,135 M45,135 L45,225 M45,225 L55,225" 
+                      stroke="#4CAF50" stroke-width="1" fill="none"/>
+                <text x="10" y="210" fill="#4CAF50" font-size="12" 
+                      transform="rotate(-90,15,185)">Body</text>
+            </g>
+
+            <!-- Code text with enhanced colors and spacing -->
+            <text font-family="JetBrains Mono, monospace" font-size="14">
+                <tspan x="40" y="20" fill="white">&lt;<tspan fill="#FF69B4">html</tspan>&gt;</tspan>
+                <tspan x="60" y="50" fill="white">&lt;<tspan fill="#38BDF8">head</tspan>&gt;</tspan>
+                <tspan x="80" y="80" fill="white">&lt;<tspan fill="#4ADE80">title</tspan>&gt;Learning HTML Structure&lt;/<tspan fill="#4ADE80">title</tspan>&gt;</tspan>
+                <tspan x="60" y="110" fill="white">&lt;/<tspan fill="#38BDF8">head</tspan>&gt;</tspan>
+                <tspan x="60" y="140" fill="white">&lt;<tspan fill="#F56565">body</tspan>&gt;</tspan>
+                <tspan x="80" y="170" fill="white">&lt;<tspan fill="#FFA07A">h1</tspan>&gt;Welcome to HTML!&lt;/<tspan fill="#FFA07A">h1</tspan>&gt;</tspan>
+                <tspan x="80" y="200" fill="white">&lt;<tspan fill="#FFA07A">p</tspan>&gt;HTML is the foundation of website.&lt;/<tspan fill="#FFA07A">p</tspan>&gt;</tspan>
+                <tspan x="60" y="230" fill="white">&lt;/<tspan fill="#F56565">body</tspan>&gt;</tspan>
+                <tspan x="40" y="260" fill="white">&lt;/<tspan fill="#FF69B4">html</tspan>&gt;</tspan>
+            </text>
+        </g>
+    </g>
+
+    <!-- Browser Preview Panel -->
+    <g transform="translate(550,40)">
+        <!-- Browser window with enhanced styling -->
+        <rect width="450" height="360" rx="10" fill="#ffffff" filter="url(#dropShadow)"/>
+        <rect width="450" height="40" rx="10" fill="#f5f5f5"/>
+        
+         <g>
+            <rect width="450" height="40" rx="12" fill="#F8FAFC"/>
+            <circle cx="25" cy="20" r="6" fill="#FF5F56"/>
+            <circle cx="45" cy="20" r="6" fill="#FFBD2E"/>
+            <circle cx="65" cy="20" r="6" fill="#27C93F"/>
+            <rect x="90" y="10" width="300" height="20" rx="4" fill="#EDF2F7"/>
+            <text x="100" y="24" fill="#64748B" font-family="Inter, sans-serif" font-size="13">Learning HTML Structure</text>
+        </g>
+
+        <!-- Enhanced rendered content -->
+        <g transform="translate(30,80)">
+            <text font-family="system-ui" x="0" y="0" font-size="28" font-weight="bold" fill="#333">Welcome to HTML!</text>
+            <text font-family="system-ui" x="0" y="40" font-size="16" fill="#666">HTML is the foundation of website.</text>
+
+            <!-- Key Info Box -->
+            <g transform="translate(0,150)">
+                <!-- Info box with lighter blue background -->
+                <rect x="-15" y="0" width="420" height="80" rx="6" fill="#EBF8FF"/>
+                
+                <!-- Info icon -->
+                <circle cx="7" cy="19" r="8" fill="#38BDF8"/>
+                <text x="5" y="24" fill="white" font-family="system-ui" font-size="12" font-weight="bold">i</text>
+                <text x="25" y="24" fill="#0369A1" font-family="system-ui" font-size="14" font-weight="bold">Info</text>
+                
+                <!-- Info text -->
+                <text x="5" y="55" fill="#0369A1" font-family="system-ui" font-size="11">
+                    Every HTML tag needs both opening and closing tags to work properly.
+                </text>
+            </g>
+        </g>
+    </g>
+
+    <!-- Filters -->
+    <defs>
+        <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+            <feOffset dx="0" dy="2"/>
+            <feComponentTransfer>
+                <feFuncA type="linear" slope="0.3"/>
+            </feComponentTransfer>
+            <feMerge>
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+
+</svg>

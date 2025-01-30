@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="700" viewBox="0 0 1050 700">
+    <!-- Code Panel -->
+    <g transform="translate(40,40)">
+        <!-- Editor window -->
+        <rect width="450" height="500" rx="12" fill="#1e1e1e" filter="url(#dropShadow)"/>
+        <rect width="450" height="40" rx="12" fill="#2d2d2d"/>
+        
+        <!-- Editor chrome -->
+        <circle cx="25" cy="20" r="6" fill="#ff5f56"/>
+        <circle cx="45" cy="20" r="6" fill="#ffbd2e"/>
+        <circle cx="65" cy="20" r="6" fill="#27c93f"/>
+        <text x="90" y="25" fill="#8b949e" font-family="Monaco, monospace" font-size="14">scientific-notation.html</text>
+
+        <!-- Code content -->
+        <g transform="translate(20,80)">
+            <!-- Line numbers -->
+            <text font-family="Monaco, monospace" font-size="14" fill="#4b5563">
+                <tspan x="0" y="0">1</tspan>
+                <tspan x="0" y="30">2</tspan>
+            </text>
+
+            <!-- HTML Code -->
+            <text font-family="Monaco, monospace" font-size="15">
+                <tspan x="20" y="0" fill="white">&lt;<tspan fill="#FF69B4">p</tspan>&gt;Chemical Formula: H&lt;<tspan fill="#FFA07A">sub</tspan>&gt;2&lt;/<tspan fill="#FFA07A">sub</tspan>&gt;O&lt;/<tspan fill="#FF69B4">p</tspan>&gt;</tspan>
+                <tspan x="20" y="30" fill="white">&lt;<tspan fill="#FF69B4">p</tspan>&gt;Exponent: x&lt;<tspan fill="#FFA07A">sup</tspan>&gt;2&lt;/<tspan fill="#FFA07A">sup</tspan>&gt; + y&lt;<tspan fill="#FFA07A">sup</tspan>&gt;2&lt;/<tspan fill="#FFA07A">sup</tspan>&gt; = z&lt;<tspan fill="#FFA07A">sup</tspan>&gt;2&lt;/<tspan fill="#FFA07A">sup</tspan>&gt;&lt;/<tspan fill="#FF69B4">p</tspan>&gt;</tspan>
+            </text>
+
+            <!-- Tag Explanations Box -->
+            <g transform="translate(0,80)">
+                <rect width="410" height="300" rx="8" fill="#1e293b" opacity="0.9"/>
+                <text font-family="system-ui" font-size="14">
+                    <tspan x="20" y="30" fill="#38BDF8" font-weight="bold">Understanding Subscripts and Superscripts:</tspan>
+                    
+                    <tspan x="20" y="70" fill="#94a3b8">1. &lt;sub&gt; tag - Subscript</tspan>
+                    <tspan x="40" y="90" fill="#94a3b8">• Displays text slightly below the baseline</tspan>
+                    <tspan x="40" y="110" fill="#94a3b8">• Common in chemical formulas</tspan>
+                    <tspan x="40" y="130" fill="#94a3b8">• Examples: H₂O, CO₂, Fe₂O₃</tspan>
+                    
+                    <tspan x="20" y="170" fill="#94a3b8">2. &lt;sup&gt; tag - Superscript</tspan>
+                    <tspan x="40" y="190" fill="#94a3b8">• Displays text slightly above the baseline</tspan>
+                    <tspan x="40" y="210" fill="#94a3b8">• Used in mathematics and footnotes</tspan>
+                    <tspan x="40" y="230" fill="#94a3b8">• Examples: x², km², footnotes¹</tspan>
+
+                    <tspan x="20" y="270" fill="#38BDF8" font-weight="bold">Pro Tip:</tspan>
+                    <tspan x="20" y="290" fill="#94a3b8">Use these tags to ensure scientific notation is clear and readable</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+
+    <!-- Browser Preview -->
+    <g transform="translate(550,40)">
+        <rect width="450" height="500" rx="12" fill="#ffffff" filter="url(#dropShadow)"/>
+        
+        <!-- Browser chrome -->
+        <rect width="450" height="40" rx="12" fill="#f1f5f9"/>
+        <circle cx="575" cy="60" r="6" fill="#ff5f56"/>
+        <circle cx="595" cy="60" r="6" fill="#ffbd2e"/>
+        <circle cx="615" cy="60" r="6" fill="#27c93f"/>
+        <rect x="640" y="50" width="300" height="20" rx="4" fill="#fff" stroke="#e2e8f0"/>
+        <text x="650" y="64" fill="#64748b" font-family="system-ui" font-size="13">Preview</text>
+
+        <!-- Rendered content -->
+        <g transform="translate(570,120)">
+            <!-- Chemical Formula -->
+            <g>
+                <text font-family="system-ui" font-size="16">
+                    <tspan x="0" y="0">Chemical Formula: </tspan>
+                    <tspan x="130" y="0">H</tspan>
+                    <tspan x="142" y="4" font-size="12">2</tspan>
+                    <tspan x="150" y="0">O</tspan>
+                </text>
+                <!-- Annotation -->
+                <path d="M142,4 L180,20" stroke="#38BDF8" stroke-width="1"/>
+                <text x="185" y="25" fill="#38BDF8" font-size="12">Subscript</text>
+            </g>
+
+            <!-- Mathematical Expression -->
+            <g transform="translate(0,50)">
+                <text font-family="system-ui" font-size="16">
+                    <tspan x="0" y="0">Exponent: </tspan>
+                    <tspan x="80" y="0">x</tspan>
+                    <tspan x="90" y="-5" font-size="12">2</tspan>
+                    <tspan x="100" y="0"> + y</tspan>
+                    <tspan x="125" y="-5" font-size="12">2</tspan>
+                    <tspan x="135" y="0"> = z</tspan>
+                    <tspan x="160" y="-5" font-size="12">2</tspan>
+                </text>
+                <!-- Annotation -->
+                <path d="M90,-5 L180,-20" stroke="#38BDF8" stroke-width="1"/>
+                <text x="185" y="-15" fill="#38BDF8" font-size="12">Superscript</text>
+            </g>
+
+            <!-- Real-world examples -->
+            <g transform="translate(0,120)">
+                <rect width="410" height="200" rx="8" fill="#f0f9ff"/>
+                <text font-family="system-ui" font-size="14" fill="#0369a1">
+                    <tspan x="20" y="30" font-weight="bold">Common Applications:</tspan>
+                    <tspan x="20" y="60">1. Chemical Formulas:</tspan>
+                    <tspan x="40" y="80">• Molecular structure (H₂O, CO₂)</tspan>
+                    <tspan x="40" y="100">• Ionic compounds (Na⁺, Cl⁻)</tspan>
+                    
+                    <tspan x="20" y="130">2. Mathematics:</tspan>
+                    <tspan x="40" y="150">• Powers (x², y³)</tspan>
+                    <tspan x="40" y="170">• Scientific notation (10⁹)</tspan>
+                    <tspan x="40" y="190">• Equations (E=mc²)</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+
+    <defs>
+        <filter id="dropShadow">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+            <feOffset dx="0" dy="4"/>
+            <feComponentTransfer>
+                <feFuncA type="linear" slope="0.2"/>
+            </feComponentTransfer>
+            <feMerge>
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+</svg>

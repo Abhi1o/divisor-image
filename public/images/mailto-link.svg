@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="600" viewBox="0 0 1050 600">
+    <!-- Code Panel -->
+    <g transform="translate(40,40)">
+        <!-- Editor window -->
+        <rect width="450" height="400" rx="12" fill="#1e1e1e" filter="url(#dropShadow)"/>
+        <rect width="450" height="40" rx="12" fill="#2d2d2d"/>
+        
+        <!-- Editor chrome -->
+        <circle cx="25" cy="20" r="6" fill="#ff5f56"/>
+        <circle cx="45" cy="20" r="6" fill="#ffbd2e"/>
+        <circle cx="65" cy="20" r="6" fill="#27c93f"/>
+        <text x="90" y="25" fill="#8b949e" font-family="Monaco, monospace" font-size="14">email-link.html</text>
+
+        <!-- Code content -->
+        <g transform="translate(20,100)">
+            <!-- mailto protocol explanation -->
+            <g transform="translate(0,-40)">
+                <rect width="410" height="30" rx="4" fill="#2d3748"/>
+                <text font-family="Monaco, monospace" font-size="14" fill="#94a3b8">
+                    <tspan x="10" y="20">mailto:</tspan>
+                    <tspan x="70" y="20">help@example.com</tspan>
+                </text>
+                <!-- Protocol Labels -->
+                <text font-family="system-ui" font-size="12" fill="#4CAF50">
+                    <tspan x="10" y="-5">Email Protocol</tspan>
+                    <tspan x="70" y="-5">Email Address</tspan>
+                </text>
+            </g>
+
+            <!-- HTML Code -->
+            <text font-family="Monaco, monospace" font-size="18">
+                <tspan x="0" y="20" fill="white">&lt;<tspan fill="#FF69B4">a</tspan> <tspan fill="#FFA07A">href</tspan>=<tspan fill="#98C379">"mailto:help@example.com"</tspan>&gt;</tspan>
+                <tspan x="20" y="50" fill="white">Send us an Email</tspan>
+                <tspan x="0" y="80" fill="white">&lt;/<tspan fill="#FF69B4">a</tspan>&gt;</tspan>
+            </text>
+
+            <!-- Mailto Link Features -->
+            <g transform="translate(0,120)">
+                <rect width="410" height="200" rx="8" fill="#1e293b" opacity="0.9"/>
+                <text font-family="system-ui" font-size="14">
+                    <tspan x="20" y="30" fill="#38BDF8" font-weight="bold">Understanding Mailto Links:</tspan>
+                    <tspan x="20" y="60" fill="#94a3b8">1. "mailto:" tells browser to open email client</tspan>
+                    <tspan x="20" y="90" fill="#94a3b8">2. Email address follows the mailto: protocol</tspan>
+                    <tspan x="20" y="120" fill="#94a3b8">3. No http:// or https:// needed</tspan>
+                    <tspan x="20" y="150" fill="#94a3b8">4. Can include subject and body parameters</tspan>
+                    <tspan x="20" y="180" fill="#94a3b8">5. Works with user's default email program</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+
+    <!-- Browser Preview -->
+    <g transform="translate(550,40)">
+        <rect width="450" height="400" rx="12" fill="#ffffff" filter="url(#dropShadow)"/>
+        
+        <!-- Browser chrome -->
+        <rect width="450" height="40" rx="12" fill="#f1f5f9"/>
+        <circle cx="575" cy="60" r="6" fill="#ff5f56"/>
+        <circle cx="595" cy="60" r="6" fill="#ffbd2e"/>
+        <circle cx="615" cy="60" r="6" fill="#27c93f"/>
+        <rect x="640" y="50" width="300" height="20" rx="4" fill="#fff" stroke="#e2e8f0"/>
+        <text x="650" y="64" fill="#64748b" font-family="system-ui" font-size="13">Website Page</text>
+
+        <!-- Link Behavior Visualization -->
+        <g transform="translate(570,120)">
+            <!-- Link preview -->
+            <text font-family="system-ui" font-size="16" fill="#0000EE" text-decoration="underline">Send us an Email</text>
+            <!-- Email icon -->
+            <text x="110" y="0" font-family="system-ui" font-size="14">✉️</text>
+
+            <!-- What Happens on Click -->
+            <g transform="translate(0,60)">
+                <rect width="410" height="240" rx="8" fill="#f0f9ff"/>
+                <text font-family="system-ui" font-size="14" fill="#0369a1">
+                    <tspan x="20" y="30" font-weight="bold">When User Clicks the Link:</tspan>
+                    <tspan x="20" y="60">1. Browser recognizes mailto: protocol</tspan>
+                    <tspan x="20" y="90">2. Opens default email application</tspan>
+                    <tspan x="20" y="120">3. Creates new email message</tspan>
+                    <tspan x="20" y="150">4. Pre-fills recipient address</tspan>
+                    <tspan x="20" y="180">5. User can add message content</tspan>
+                    <tspan x="20" y="210">6. Email client handles sending</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+
+    <defs>
+        <filter id="dropShadow">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+            <feOffset dx="0" dy="4"/>
+            <feComponentTransfer>
+                <feFuncA type="linear" slope="0.2"/>
+            </feComponentTransfer>
+            <feMerge>
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+</svg>

@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="700" viewBox="0 0 1050 700">
+    <!-- Background gradient -->
+    <defs>
+        <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#1a1f2c;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#2d3748;stop-opacity:1" />
+        </linearGradient>
+        <linearGradient id="headerGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#2d3748;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#1a1f2c;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+
+    <!-- Main background -->
+    <rect width="1050" height="700" fill="#f8fafc"/>
+
+    <!-- Code Panel -->
+    <g transform="translate(40,40)">
+        <!-- Editor window with enhanced styling -->
+        <rect width="450" height="500" rx="12" fill="url(#bgGradient)" filter="url(#dropShadow)"/>
+        <rect width="450" height="40" rx="12" fill="url(#headerGradient)"/>
+        
+        <!-- Editor controls -->
+        <circle cx="25" cy="20" r="6" fill="#ff5f56"/>
+        <circle cx="45" cy="20" r="6" fill="#ffbd2e"/>
+        <circle cx="65" cy="20" r="6" fill="#27c93f"/>
+        <text x="90" y="25" fill="#8b949e" font-family="Monaco, monospace" font-size="14">index.html</text>
+
+        <!-- Line numbers -->
+        <g transform="translate(20,60)" fill="#4b5563" font-family="Monaco, monospace" font-size="14">
+            <text x="0" y="30">1</text>
+            <text x="0" y="60">2</text>
+            <text x="0" y="90">3</text>
+            <text x="0" y="120">4</text>
+            <text x="0" y="150">5</text>
+            <text x="0" y="180">6</text>
+        </g>
+        
+        <!-- Code content with syntax highlighting -->
+        <g transform="translate(40,60)">
+            <text font-family="Monaco, monospace" font-size="16">
+                <!-- H1 section -->
+                <tspan x="20" y="30" fill="white">&lt;<tspan fill="#FF69B4">h1</tspan>&gt;</tspan>
+                <tspan x="40" y="60" fill="#e2e8f0">Divisor Ai</tspan>
+                <tspan x="20" y="90" fill="white">&lt;/<tspan fill="#FF69B4">h1</tspan>&gt;</tspan>
+                
+                <!-- Paragraph section -->
+                <tspan x="20" y="120" fill="white">&lt;<tspan fill="#FF69B4">p</tspan>&gt;</tspan>
+                <tspan x="40" y="150" fill="#e2e8f0">Focus on &lt;<tspan fill="#FFA07A">i</tspan>&gt;details&lt;/<tspan fill="#FFA07A">i</tspan>&gt; and &lt;<tspan fill="#FFA07A">em</tspan>&gt;achieve&lt;/<tspan fill="#FFA07A">em</tspan>&gt; your dreams.</tspan>
+                <tspan x="20" y="180" fill="white">&lt;/<tspan fill="#FF69B4">p</tspan>&gt;</tspan>
+            </text>
+
+            <!-- Enhanced annotations -->
+            <g transform="translate(0,240)">
+                <rect x="20" y="0" width="370" height="200" rx="8" fill="#1e293b" opacity="0.8"/>
+                <text font-family="system-ui" font-size="14" fill="#38BDF8">
+                    <tspan x="40" y="30">Tag Explanation:</tspan>
+                    <tspan x="40" y="60" fill="#94a3b8">&lt;i&gt; - Italics (Visual formatting)</tspan>
+                    <tspan x="40" y="90" fill="#94a3b8">&lt;em&gt; - Emphasis (Semantic meaning)</tspan>
+                    <tspan x="40" y="120">Key Differences:</tspan>
+                    <tspan x="40" y="150" fill="#94a3b8">• &lt;i&gt; is purely visual styling</tspan>
+                    <tspan x="40" y="180" fill="#94a3b8">• &lt;em&gt; indicates emphasis for screen readers</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+
+    <!-- Browser Preview -->
+    <g transform="translate(550,40)">
+        <!-- Browser window -->
+        <rect width="450" height="500" rx="12" fill="#ffffff" filter="url(#dropShadow)"/>
+        
+        <!-- Browser chrome -->
+        <rect width="450" height="40" rx="12" fill="#f1f5f9"/>
+        <circle cx="25" cy="20" r="6" fill="#ff5f56"/>
+        <circle cx="45" cy="20" r="6" fill="#ffbd2e"/>
+        <circle cx="65" cy="20" r="6" fill="#27c93f"/>
+        <rect x="90" y="10" width="300" height="20" rx="4" fill="#fff" stroke="#e2e8f0"/>
+        <text x="100" y="24" fill="#64748b" font-family="system-ui" font-size="13">Preview</text>
+
+        <!-- Rendered content -->
+        <g transform="translate(20,80)">
+            <!-- H1 section -->
+            <g>
+                <rect x="0" y="-20" width="410" height="60" rx="6" fill="#f8fafc" stroke="#38BDF8" stroke-width="2" stroke-dasharray="4"/>
+                <text x="20" y="20" font-family="system-ui" font-size="32" font-weight="bold" fill="#1e293b">Divisor Ai</text>
+            </g>
+
+            <!-- Paragraph section -->
+            <g transform="translate(0,60)">
+                <rect x="0" y="0" width="410" height="60" rx="6" fill="#f8fafc" stroke="#38BDF8" stroke-width="2" stroke-dasharray="4"/>
+                <text font-family="system-ui" font-size="16" x="20" y="35" fill="#334155">
+                    Focus on <tspan font-style="italic">details</tspan> and <tspan font-style="italic">achieve</tspan> your dreams.
+                </text>
+            </g>
+
+            <!-- Interactive elements explanation -->
+            <g transform="translate(0,160)">
+                <rect x="0" y="0" width="410" height="160" rx="8" fill="#f0f9ff"/>
+                <text font-family="system-ui" font-size="14" fill="#0369a1">
+                    <tspan x="20" y="30" font-weight="bold">Visual Guide:</tspan>
+                    <tspan x="20" y="60">1. Watch how italic text stands out</tspan>
+                    <tspan x="20" y="90">2. Notice the semantic structure</tspan>
+                    <tspan x="20" y="120">3. See how whitespace affects readability</tspan>
+                    <tspan x="20" y="150">4. Observe heading vs paragraph spacing</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+
+    <!-- Enhanced shadow filter -->
+    <defs>
+        <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+            <feOffset dx="0" dy="4"/>
+            <feComponentTransfer>
+                <feFuncA type="linear" slope="0.2"/>
+            </feComponentTransfer>
+            <feMerge>
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+</svg>

@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="700" viewBox="0 0 1050 700">
+    <!-- Code Panel -->
+    <g transform="translate(40,40)">
+        <!-- Editor window -->
+        <rect width="450" height="500" rx="12" fill="#1e1e1e" filter="url(#dropShadow)"/>
+        <rect width="450" height="40" rx="12" fill="#2d2d2d"/>
+        
+        <!-- Editor chrome -->
+        <circle cx="25" cy="20" r="6" fill="#ff5f56"/>
+        <circle cx="45" cy="20" r="6" fill="#ffbd2e"/>
+        <circle cx="65" cy="20" r="6" fill="#27c93f"/>
+        <text x="90" y="25" fill="#8b949e" font-family="Monaco, monospace" font-size="14">html-entities.html</text>
+
+        <!-- Code content -->
+        <g transform="translate(20,80)">
+            <!-- Line numbers -->
+            <text font-family="Monaco, monospace" font-size="14" fill="#4b5563">
+                <tspan x="0" y="0">1</tspan>
+                <tspan x="0" y="30">2</tspan>
+                <tspan x="0" y="60">3</tspan>
+                <tspan x="0" y="90">4</tspan>
+            </text>
+
+            <!-- HTML Code -->
+            <text font-family="Monaco, monospace" font-size="15">
+                <tspan x="20" y="0" fill="white">&lt;<tspan fill="#FF69B4">p</tspan>&gt;This sentence has &amp;nbsp; extra spaces.&lt;/<tspan fill="#FF69B4">p</tspan>&gt;</tspan>
+                <tspan x="20" y="30" fill="white">&lt;<tspan fill="#FF69B4">p</tspan>&gt;Use &amp;amp; to display an ampersand (&amp;).&lt;/<tspan fill="#FF69B4">p</tspan>&gt;</tspan>
+                <tspan x="20" y="60" fill="white">&lt;<tspan fill="#FF69B4">p</tspan>&gt;The HTML tag symbols: &amp;lt; and &amp;gt;.&lt;/<tspan fill="#FF69B4">p</tspan>&gt;</tspan>
+                <tspan x="20" y="90" fill="white">&lt;<tspan fill="#FF69B4">p</tspan>&gt;Copyright 2024 &amp;copy;&lt;/<tspan fill="#FF69B4">p</tspan>&gt;</tspan>
+            </text>
+
+            <!-- Entity Explanations Box -->
+            <g transform="translate(0,120)">
+                <rect width="410" height="320" rx="8" fill="#1e293b" opacity="0.9"/>
+                <text font-family="system-ui" font-size="14">
+                    <tspan x="20" y="30" fill="#38BDF8" font-weight="bold">Common HTML Entities:</tspan>
+                    
+                    <tspan x="20" y="70" fill="#94a3b8">&amp;nbsp; - Non-breaking Space</tspan>
+                    <tspan x="40" y="90" fill="#94a3b8">• Adds a space that won't break into a new line</tspan>
+                    <tspan x="40" y="110" fill="#94a3b8">• Useful for maintaining spacing in text</tspan>
+                    
+                    <tspan x="20" y="150" fill="#94a3b8">&amp;amp; - Ampersand Symbol (&amp;)</tspan>
+                    <tspan x="40" y="170" fill="#94a3b8">• Used to display the &amp; character</tspan>
+                    <tspan x="40" y="190" fill="#94a3b8">• Required since &amp; starts entity codes</tspan>
+                    
+                    <tspan x="20" y="230" fill="#94a3b8">&amp;lt; and &amp;gt; - Angle Brackets</tspan>
+                    <tspan x="40" y="250" fill="#94a3b8">• Display &lt; and &gt; without creating tags</tspan>
+                    <tspan x="40" y="270" fill="#94a3b8">• Essential when showing HTML code</tspan>
+                    
+                    <tspan x="20" y="300" fill="#94a3b8">&amp;copy; - Copyright Symbol</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+
+    <!-- Browser Preview -->
+    <g transform="translate(550,40)">
+        <rect width="450" height="500" rx="12" fill="#ffffff" filter="url(#dropShadow)"/>
+        
+        <!-- Browser chrome -->
+        <rect width="450" height="40" rx="12" fill="#f1f5f9"/>
+        <circle cx="575" cy="60" r="6" fill="#ff5f56"/>
+        <circle cx="595" cy="60" r="6" fill="#ffbd2e"/>
+        <circle cx="615" cy="60" r="6" fill="#27c93f"/>
+        <rect x="640" y="50" width="300" height="20" rx="4" fill="#fff" stroke="#e2e8f0"/>
+        <text x="650" y="64" fill="#64748b" font-family="system-ui" font-size="13">Preview</text>
+
+        <!-- Rendered content -->
+        <g transform="translate(570,120)">
+            <!-- Example outputs -->
+            <text font-family="system-ui" font-size="16">
+                <tspan x="0" y="0">This sentence has    extra spaces.</tspan>
+                <tspan x="0" y="40">Use &amp; to display an ampersand (&amp;).</tspan>
+                <tspan x="0" y="80">The HTML tag symbols: &lt; and &gt;.</tspan>
+                <tspan x="0" y="120">Copyright 2024 ©</tspan>
+            </text>
+
+            <!-- Visual explanations -->
+            <g transform="translate(0,160)">
+                <rect width="410" height="200" rx="8" fill="#f0f9ff"/>
+                <text font-family="system-ui" font-size="14" fill="#0369a1">
+                    <tspan x="20" y="30" font-weight="bold">Why Use HTML Entities?</tspan>
+                    <tspan x="20" y="60">1. Special Characters</tspan>
+                    <tspan x="40" y="80">• Display reserved HTML characters</tspan>
+                    <tspan x="40" y="100">• Show copyright and trademark symbols</tspan>
+                    
+                    <tspan x="20" y="130">2. Spacing Control</tspan>
+                    <tspan x="40" y="150">• Maintain specific spacing in text</tspan>
+                    <tspan x="40" y="170">• Prevent unwanted line breaks</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+
+    <defs>
+        <filter id="dropShadow">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+            <feOffset dx="0" dy="4"/>
+            <feComponentTransfer>
+                <feFuncA type="linear" slope="0.2"/>
+            </feComponentTransfer>
+            <feMerge>
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+</svg>

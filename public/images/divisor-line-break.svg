@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="500" viewBox="0 0 1050 500">
+    <!-- Code Panel -->
+    <g transform="translate(40,40)">
+        <rect width="450" height="300" rx="10" fill="#1e1e1e" filter="url(#dropShadow)"/>
+        <rect width="450" height="30" rx="10" fill="#2d2d2d"/>
+        <text x="20" y="20" fill="#fff" font-family="Monaco, monospace" font-size="14">index.html</text>
+        
+        <g transform="translate(20,60)">
+            <!-- Opening/Closing tag labels -->
+            <text x="30" y="25" fill="#4CAF50" font-size="14">opening tag</text>
+            <text x="280" y="25" fill="#4CAF50" font-size="14">closing tag</text>
+
+            <!-- Tag indicators -->
+            <path d="M40,40 L80,40 M80,35 L80,45" stroke="#4CAF50" stroke-width="2" fill="none"/>
+            <path d="M290,40 L330,40 M290,35 L290,45" stroke="#4CAF50" stroke-width="2" fill="none"/>
+
+            <!-- Code text -->
+            <text font-family="Monaco, monospace" font-size="16">
+                <tspan x="0" y="45" fill="white">&lt;<tspan fill="#FF69B4">h1</tspan>&gt;Divisor Ai&lt;/<tspan fill="#FF69B4">h1</tspan>&gt;</tspan>
+                <tspan x="0" y="85" fill="white">&lt;<tspan fill="#FF69B4">p</tspan>&gt;Your journey begins here.</tspan>
+                <tspan x="0" y="115" fill="white">&lt;<tspan fill="#FF69B4">br</tspan>&gt;</tspan>
+                <tspan x="0" y="145" fill="white">Master coding with us.&lt;/<tspan fill="#FF69B4">p</tspan>&gt;</tspan>
+            </text>
+
+            <!-- BR tag note -->
+            <text x="100" y="115" fill="#38BDF8" font-size="14">Line break tag - no closing tag needed!</text>
+        </g>
+    </g>
+
+    <!-- Browser Preview -->
+    <g transform="translate(550,40)">
+        <rect width="450" height="300" rx="10" fill="#ffffff" filter="url(#dropShadow)"/>
+        
+        <!-- Browser chrome -->
+        <rect width="450" height="40" rx="10" fill="#f5f5f5"/>
+        <circle cx="25" cy="20" r="6" fill="#ff5f56"/>
+        <circle cx="45" cy="20" r="6" fill="#ffbd2e"/>
+        <circle cx="65" cy="20" r="6" fill="#27c93f"/>
+        <rect x="90" y="10" width="300" height="20" rx="4" fill="#fff" stroke="#ddd"/>
+        <text x="100" y="24" fill="#666" font-size="12">Preview</text>
+
+        <!-- Rendered content with element indicators -->
+        <g transform="translate(20,60)">
+            <rect x="0" y="0" width="410" height="50" rx="4" fill="#f0f8ff" stroke="#38BDF8" stroke-dasharray="4"/>
+            <text x="380" y="20" fill="#38BDF8" font-size="14">&lt;h1&gt;</text>
+            <text x="20" y="30" font-family="system-ui" font-size="24" font-weight="bold">Divisor Ai</text>
+
+            <rect x="0" y="70" width="410" height="80" rx="4" fill="#f0f8ff" stroke="#38BDF8" stroke-dasharray="4"/>
+            <text x="380" y="90" fill="#38BDF8" font-size="14">&lt;p&gt;</text>
+            <text x="20" y="100" font-family="system-ui" font-size="16">Your journey begins here.</text>
+            <text x="20" y="130" font-family="system-ui" font-size="16">Master coding with us.</text>
+
+            <!-- BR explanation -->
+            <text x="20" y="180" fill="#38BDF8" font-size="14" font-family="system-ui">
+                The &lt;br&gt; tag creates a line break within the paragraph
+            </text>
+        </g>
+    </g>
+
+    <!-- Filters -->
+    <defs>
+        <filter id="dropShadow">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+            <feOffset dx="0" dy="2"/>
+            <feComponentTransfer>
+                <feFuncA type="linear" slope="0.3"/>
+            </feComponentTransfer>
+            <feMerge>
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+</svg>

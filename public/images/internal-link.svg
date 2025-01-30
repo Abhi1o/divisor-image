@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="600" viewBox="0 0 1050 600">
+    <!-- Code Panel -->
+    <g transform="translate(40,40)">
+        <!-- Editor window -->
+        <rect width="450" height="400" rx="12" fill="#1e1e1e" filter="url(#dropShadow)"/>
+        <rect width="450" height="40" rx="12" fill="#2d2d2d"/>
+        
+        <!-- Editor chrome -->
+        <circle cx="25" cy="20" r="6" fill="#ff5f56"/>
+        <circle cx="45" cy="20" r="6" fill="#ffbd2e"/>
+        <circle cx="65" cy="20" r="6" fill="#27c93f"/>
+        <text x="90" y="25" fill="#8b949e" font-family="Monaco, monospace" font-size="14">index.html</text>
+
+        <!-- File structure visualization -->
+        <g transform="translate(20,60)">
+            <rect width="410" height="80" rx="6" fill="#2d3748" opacity="0.6"/>
+            <text font-family="Monaco, monospace" font-size="14" fill="#94a3b8">
+                <tspan x="20" y="30">website/</tspan>
+                <tspan x="40" y="50">├── index.html     (current page)</tspan>
+                <tspan x="40" y="70">└── about.html     (target page)</tspan>
+            </text>
+        </g>
+
+        <!-- Code content -->
+        <g transform="translate(20,180)">
+            <!-- URL annotation -->
+            <text x="120" y="-20" fill="#4CAF50" font-size="14">Relative path to file in same folder</text>
+            <path d="M120,-15 L120,-5" stroke="#4CAF50" stroke-width="2" fill="none"/>
+
+            <!-- Space annotation -->
+            <text x="60" y="-50" fill="#38BDF8" font-size="14">Space between tag and attribute</text>
+            <path d="M60,-45 L60,-25" stroke="#38BDF8" stroke-width="2" fill="none"/>
+
+            <!-- HTML Code -->
+            <text font-family="Monaco, monospace" font-size="20">
+                <tspan x="0" y="0" fill="white">&lt;<tspan fill="#FF69B4">a</tspan> <tspan fill="#FFA07A">href</tspan>=<tspan fill="#98C379">"about.html"</tspan>&gt;About Us&lt;/<tspan fill="#FF69B4">a</tspan>&gt;</tspan>
+            </text>
+
+            <!-- Component Explanations -->
+            <g transform="translate(0,40)">
+                <rect width="410" height="160" rx="8" fill="#1e293b" opacity="0.9"/>
+                <text font-family="system-ui" font-size="14">
+                    <tspan x="20" y="30" fill="#38BDF8" font-weight="bold">Internal Link Structure:</tspan>
+                    <tspan x="20" y="60" fill="#94a3b8">• No need for full URL - just the filename</tspan>
+                    <tspan x="20" y="90" fill="#94a3b8">• Links to another page in same directory</tspan>
+                    <tspan x="20" y="120" fill="#94a3b8">• Path is relative to current page location</tspan>
+                    <tspan x="20" y="150" fill="#94a3b8">• Works locally and after website deployment</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+
+    <!-- Browser Preview -->
+    <g transform="translate(550,40)">
+        <rect width="450" height="400" rx="12" fill="#ffffff" filter="url(#dropShadow)"/>
+        
+        <!-- Browser chrome -->
+        <rect width="450" height="40" rx="12" fill="#f1f5f9"/>
+        <circle cx="575" cy="60" r="6" fill="#ff5f56"/>
+        <circle cx="595" cy="60" r="6" fill="#ffbd2e"/>
+        <circle cx="615" cy="60" r="6" fill="#27c93f"/>
+        <rect x="640" y="50" width="300" height="20" rx="4" fill="#fff" stroke="#e2e8f0"/>
+        <text x="650" y="64" fill="#64748b" font-family="system-ui" font-size="13">website/index.html</text>
+
+        <!-- Rendered content -->
+        <g transform="translate(570,120)">
+            <!-- Link preview -->
+            <text font-family="system-ui" font-size="16" fill="#0000EE" text-decoration="underline">About Us</text>
+
+            <!-- Navigation Explanation -->
+            <g transform="translate(0,60)">
+                <rect width="410" height="200" rx="8" fill="#f0f9ff"/>
+                <text font-family="system-ui" font-size="14" fill="#0369a1">
+                    <tspan x="20" y="30" font-weight="bold">How Internal Navigation Works:</tspan>
+                    <tspan x="20" y="60">1. User clicks "About Us" link</tspan>
+                    <tspan x="20" y="90">2. Browser looks for about.html in same folder</tspan>
+                    <tspan x="20" y="120">3. Loads new page while staying on same site</tspan>
+                    <tspan x="20" y="150">4. URL changes to show new page location</tspan>
+                    <tspan x="20" y="180">5. Navigation is smooth and instantaneous</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+
+    <defs>
+        <filter id="dropShadow">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+            <feOffset dx="0" dy="4"/>
+            <feComponentTransfer>
+                <feFuncA type="linear" slope="0.2"/>
+            </feComponentTransfer>
+            <feMerge>
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+</svg>

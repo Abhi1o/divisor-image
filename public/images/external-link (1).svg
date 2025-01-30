@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1050" height="600" viewBox="0 0 1050 600">
+    <!-- Code Panel -->
+    <g transform="translate(40,40)">
+        <!-- Editor window -->
+        <rect width="450" height="400" rx="12" fill="#1e1e1e" filter="url(#dropShadow)"/>
+        <rect width="450" height="40" rx="12" fill="#2d2d2d"/>
+        
+        <!-- Editor chrome -->
+        <circle cx="25" cy="20" r="6" fill="#ff5f56"/>
+        <circle cx="45" cy="20" r="6" fill="#ffbd2e"/>
+        <circle cx="65" cy="20" r="6" fill="#27c93f"/>
+        <text x="90" y="25" fill="#8b949e" font-family="Monaco, monospace" font-size="14">external-link.html</text>
+
+        <!-- Code content -->
+        <g transform="translate(20,100)">
+            <!-- URL Structure Breakdown -->
+            <g transform="translate(0,-40)">
+                <rect width="410" height="30" rx="4" fill="#2d3748"/>
+                <text font-family="Monaco, monospace" font-size="14" fill="#94a3b8">
+                    <tspan x="10" y="20">https://</tspan>
+                    <tspan x="80" y="20">www.</tspan>
+                    <tspan x="120" y="20">wikipedia</tspan>
+                    <tspan x="190" y="20">.org</tspan>
+                </text>
+                <!-- URL Part Labels -->
+                <text font-family="system-ui" font-size="12" fill="#4CAF50">
+                    <tspan x="10" y="-5">Protocol</tspan>
+                    <tspan x="80" y="-5">Subdomain</tspan>
+                    <tspan x="120" y="-5">Domain name</tspan>
+                    <tspan x="190" y="-5">TLD</tspan>
+                </text>
+            </g>
+
+            <!-- HTML Code -->
+            <text font-family="Monaco, monospace" font-size="18">
+                <tspan x="0" y="20" fill="white">&lt;<tspan fill="#FF69B4">a</tspan> <tspan fill="#FFA07A">href</tspan>=<tspan fill="#98C379">"https://www.wikipedia.org"</tspan>&gt;</tspan>
+                <tspan x="20" y="50" fill="white">Visit Wikipedia</tspan>
+                <tspan x="0" y="80" fill="white">&lt;/<tspan fill="#FF69B4">a</tspan>&gt;</tspan>
+            </text>
+
+            <!-- External Link Features -->
+            <g transform="translate(0,120)">
+                <rect width="410" height="200" rx="8" fill="#1e293b" opacity="0.9"/>
+                <text font-family="system-ui" font-size="14">
+                    <tspan x="20" y="30" fill="#38BDF8" font-weight="bold">External Link Requirements:</tspan>
+                    <tspan x="20" y="60" fill="#94a3b8">1. Full URL including protocol (https://)</tspan>
+                    <tspan x="20" y="90" fill="#94a3b8">2. Complete domain name with TLD (.org)</tspan>
+                    <tspan x="20" y="120" fill="#94a3b8">3. Double quotes around entire URL</tspan>
+                    <tspan x="20" y="150" fill="#94a3b8">4. Proper syntax to ensure reliability</tspan>
+                    <tspan x="20" y="180" fill="#94a3b8">5. Clear, descriptive link text</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+
+    <!-- Browser Preview -->
+    <g transform="translate(550,40)">
+        <rect width="450" height="400" rx="12" fill="#ffffff" filter="url(#dropShadow)"/>
+        
+        <!-- Browser chrome -->
+        <rect width="450" height="40" rx="12" fill="#f1f5f9"/>
+        <circle cx="575" cy="60" r="6" fill="#ff5f56"/>
+        <circle cx="595" cy="60" r="6" fill="#ffbd2e"/>
+        <circle cx="615" cy="60" r="6" fill="#27c93f"/>
+        <rect x="640" y="50" width="300" height="20" rx="4" fill="#fff" stroke="#e2e8f0"/>
+        <text x="650" y="64" fill="#64748b" font-family="system-ui" font-size="13">Your Website</text>
+
+        <!-- Link Behavior Visualization -->
+        <g transform="translate(570,120)">
+            <!-- Link preview -->
+            <text font-family="system-ui" font-size="16" fill="#0000EE" text-decoration="underline">Visit Wikipedia</text>
+            <!-- External link indicator -->
+            <text x="100" y="0" font-family="system-ui" font-size="14">🔗</text>
+
+            <!-- Navigation Process -->
+            <g transform="translate(0,60)">
+                <rect width="410" height="240" rx="8" fill="#f0f9ff"/>
+                <text font-family="system-ui" font-size="14" fill="#0369a1">
+                    <tspan x="20" y="30" font-weight="bold">What Happens When Clicked:</tspan>
+                    <tspan x="20" y="60">1. Browser recognizes external URL</tspan>
+                    <tspan x="20" y="90">2. Opens new connection to external server</tspan>
+                    <tspan x="20" y="120">3. Often opens in new tab (user setting)</tspan>
+                    <tspan x="20" y="150">4. Shows security indicators for HTTPS</tspan>
+                    <tspan x="20" y="180">5. May trigger browser security checks</tspan>
+                    <tspan x="20" y="210">6. Updates browser history</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+
+    <defs>
+        <filter id="dropShadow">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+            <feOffset dx="0" dy="4"/>
+            <feComponentTransfer>
+                <feFuncA type="linear" slope="0.2"/>
+            </feComponentTransfer>
+            <feMerge>
+                <feMergeNode/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+</svg>
