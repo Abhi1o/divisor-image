@@ -63,7 +63,17 @@ const images = [
   { src: "/images/text-decoration-tags-1.svg", alt: "Text Decoration Tags Example" },
   { src: "/images/text-decoration-tags.svg", alt: "Text Decoration Tags" },
   { src: "/images/unordered-list-1.svg", alt: "Unordered List Example" },
-  { src: "/images/unordered-list.svg", alt: "Unordered List" }
+  { src: "/images/unordered-list.svg", alt: "Unordered List" },
+  // Science/Plant images
+  { src: "/images/science/plant/Fertilization.png", alt: "Plant Fertilization Process" },
+  { src: "/images/science/plant/Germination.png", alt: "Plant Germination Process" },
+  { src: "/images/science/plant/Living-organism.png", alt: "Living Organism" },
+  { src: "/images/science/plant/parts-of-flower.png", alt: "Parts of a Flower" },
+  { src: "/images/science/plant/Parts-of-plant.png", alt: "Parts of a Plant" },
+  { src: "/images/science/plant/Photosynthesis.png", alt: "Photosynthesis Process" },
+  { src: "/images/science/plant/Pollination-of-flower.png", alt: "Flower Pollination Process" },
+  { src: "/images/science/plant/Seed-dispersal.png", alt: "Seed Dispersal Methods" },
+  { src: "/images/science/plant/Seed-structure.png", alt: "Seed Structure" }
 ]
 
 export function ImageGallery() {
